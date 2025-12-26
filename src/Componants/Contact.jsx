@@ -65,7 +65,7 @@ const Contact = () => {
                             onSubmit={handleSubmit} 
                             className="relative bg-slate-900 border border-slate-800 p-8 md:p-10 rounded-3xl shadow-2xl"
                         >
-                            <div className="space-y-6">
+                            <div className="space-y-6"> 
                                 <div>
                                     <label className="block text-sm font-medium text-slate-400 mb-2">Your Name</label>
                                     <input type="text" name="user_name" required className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-blue-500 outline-none" placeholder="John Doe" />

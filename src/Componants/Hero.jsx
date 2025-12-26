@@ -17,7 +17,7 @@ const Hero = () => {
     );
 
     return (
-        <div id='hero' className="relative min-h-screen  w-full flex items-center justify-center bg-slate-950 overflow-hidden px-4 md:px-22">
+        <div id='home' className="relative min-h-screen  w-full flex items-center justify-center bg-slate-950 overflow-hidden px-4 md:px-22">
 
             {/* --- Background Animated Blobs --- */}
             {/* Adjusted position slightly to ensure they stay behind content */}
@@ -66,8 +66,7 @@ const Hero = () => {
                             <SocialIcon Icon={Linkedin}
                                 href="https://www.linkedin.com/in/sachin-marmat-66b55531a/"
                             />
-                            <SocialIcon Icon={Mail}
-                            />
+                            {/* <SocialIcon Icon={Mail}/>  */}
                         </div>
                     </div>
                 </div>
