@@ -66,7 +66,7 @@ const Hero = () => {
                             <SocialIcon Icon={Linkedin}
                                 href="https://www.linkedin.com/in/sachin-marmat-66b55531a/"
                             />
-                            {/* <SocialIcon Icon={Mail}/>  */}
+                            <SocialIcon Icon={Mail} href="/contact"/> 
                         </div>
                     </div>
                 </div>
