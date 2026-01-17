@@ -8,7 +8,18 @@ const projectImg = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97
 const Projects = () => {
     // Project Data - Add your own projects here
     const projects = [
+       
         {
+            title: "Job Portal Website",
+            description: "Our job portal is a complete career and hiring platform designed to connect job seekers with employers across all industries. Users can search and apply for all types of jobs, create and manage professional resumes, and track applications easily. Employers and companies can post job openings, manage candidates, and streamline the hiring process through a powerful admin dashboard.",
+            tech: ["React", "JavaScript", "Mern", "Tailwind"],
+            image: "https://webfeb.in/wp-content/uploads/2016/09/job-portal-1.jpg",
+            links: {
+                demo: "https://pixel-ui-six.vercel.app/",
+                code: "https://github.com/sachinmarmat/Pixel-ui"
+            }
+        },
+         {
             title: "E-Commerce Dashboard",
             description: "A comprehensive dashboard for managing products, orders, and analytics. Features include dark mode, real-time data visualization, and role-based access control.",
             tech: ["React.js", "Tailwind", "Node.js", "Chart.js"],
@@ -19,20 +30,10 @@ const Projects = () => {
             }
         },
         {
-            title: "AI Chat Application",
-            description: "Real-time chat interface powered by OpenAI's GPT-4 API. Includes message history, syntax highlighting for code blocks, and multiple chat sessions.",
-            tech: ["Next.js", "TypeScript", "OpenAI API", "Firebase"],
-            image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2006&auto=format&fit=crop",
-            links: {
-                demo: "https://pixel-ui-six.vercel.app/",
-                code: "https://github.com/sachinmarmat/Pixel-ui"
-            }
-        },
-        {
-            title: "Crypto Portfolio Tracker",
-            description: "Track cryptocurrency prices in real-time. Users can create watchlists, set price alerts, and view historical price trends using interactive graphs.",
-            tech: ["Vue.js", "D3.js", "CoinGecko API", "Supabase"],
-            image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=2069&auto=format&fit=crop",
+            title: "Clothing website ",
+            description: "A fully responsive e-commerce web application designed for a women's clothing brand. The platform features a modern, grid-based UI for showcasing products, dynamic filtering for categories (like Kurtis), and a seamless shopping cart experience. Built with a focus on performance and component reusability.",
+            tech: ["React", "Javascript", "API", "MERN" ,"Tailwind"],
+            image: "https://img.freepik.com/free-vector/fashion-sale-landing-page-template_23-2148582384.jpg?semt=ais_hybrid&w=740&q=80",
             links: {
                 demo: "https://project01-smoky.vercel.app/",
                 code: "#"
