@@ -1,6 +1,7 @@
-/* In your index.css */
+/* Global styles */
 body {
-  background: #0f0c29; 
+  background: #0f0c29;
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll / right-side gap on mobile */
 }
