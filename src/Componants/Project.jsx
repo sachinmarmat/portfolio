@@ -1,137 +1,232 @@
+
 import React from 'react';
 import { Github, ExternalLink, Folder, ArrowRight } from 'lucide-react';
 
-// Placeholder image for projects (You should replace these with your actual screenshots)
-// You can use: import project1 from '../assets/project1.png';
-const projectImg = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"; 
-
 const Projects = () => {
-    // Project Data - Add your own projects here
-    const projects = [
-       
-        {
-            title: "Job Portal Website",
-            description: "Our job portal is a complete career and hiring platform designed to connect job seekers with employers across all industries. Users can search and apply for all types of jobs, create and manage professional resumes, and track applications easily. Employers and companies can post job openings, manage candidates, and streamline the hiring process through a powerful admin dashboard.",
-            tech: ["React", "JavaScript", "Mern", "Tailwind"],
-            image: "https://webfeb.in/wp-content/uploads/2016/09/job-portal-1.jpg",
-            links: {
-                demo: "https://pixel-ui-six.vercel.app/",
-                code: "https://github.com/sachinmarmat/Pixel-ui"
-            }
-        },
-         {
-            title: "E-Commerce Dashboard",
-            description: "A comprehensive dashboard for managing products, orders, and analytics. Features include dark mode, real-time data visualization, and role-based access control.",
-            tech: ["React.js", "Tailwind", "Node.js", "Chart.js"],
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop", // Replace with your image
-            links: {
-                demo: "https://freshcart-frontend-8xq5.vercel.app/",
-                code: "https://github.com/sachinmarmat/freshcart-frontend"
-            }
-        },
-        {
-            title: "Clothing website ",
-            description: "A fully responsive e-commerce web application designed for a women's clothing brand. The platform features a modern, grid-based UI for showcasing products, dynamic filtering for categories (like Kurtis), and a seamless shopping cart experience. Built with a focus on performance and component reusability.",
-            tech: ["React", "Javascript", "API", "MERN" ,"Tailwind"],
-            image: "https://img.freepik.com/free-vector/fashion-sale-landing-page-template_23-2148582384.jpg?semt=ais_hybrid&w=740&q=80",
-            links: {
-                demo: "https://project01-smoky.vercel.app/",
-                code: "#"
-            }
-        }
-    ];
 
-    return (
-        <section id='projects' className="relative min-h-screen bg-slate-950 py-24 px-4 md:px-0">
-            
-            {/* Background Gradient Orbs */}
-            <div className="absolute top-40 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute bottom-40 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl -z-10"></div>
+  const projects = [
+    {
+      title: "Job Portal Platform",
+      description:
+        "A full-stack MERN job portal designed to connect job seekers with employers. Users can create resumes, apply for jobs, and track applications while employers can manage job listings and candidates through an admin dashboard.",
+      features: [
+        "Resume builder & job application tracking",
+        "Employer dashboard for managing candidates",
+        "Advanced job search & filtering",
+        "Secure authentication and role-based access"
+      ],
+      tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+      image: "https://webfeb.in/wp-content/uploads/2016/09/job-portal-1.jpg",
+      links: {
+        demo: "https://pixel-ui-six.vercel.app/",
+        code: "https://github.com/sachinmarmat/Pixel-ui"
+      }
+    },
 
-            <div className="container mx-auto max-w-7xl relative z-10">
-                
-                {/* Section Header */}
-                <div className="flex flex-col items-center text-center mb-16 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-blue-400 text-sm font-medium mb-2">
-                        <Folder size={14} />
-                        <span>Portfolio</span>
-                    </div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-                        Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">Projects</span>
-                    </h2>
-                    <p className="text-slate-400 max-w-2xl text-lg">
-                        A curated selection of my work, ranging from web applications to architectural design systems.
-                    </p>
-                </div> 
+    {
+      title: "Astrology Prediction Platform",
+      description:
+        "A modern astrology platform that generates personalized horoscope predictions using birth details like date, time, and location. The system analyzes planetary positions and provides life insights.",
+      features: [
+        "Birth chart (Kundli) generator",
+        "Daily & monthly horoscope predictions",
+        "Interactive astrology charts",
+        "Planetary analysis dashboard"
+      ],
+      tech: ["React.js", "Node.js", "Chart.js", "Tailwind"],
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+      links: {
+        demo: "https://www.panditpurshotamgaur.com/",
+        code: "https://github.com/sachinmarmat/freshcart-frontend"
+      }
+    },
 
-                {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, index) => (
-                        <div 
-                            key={index}
-                            className="group relative bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 flex flex-col"
-                        >
-                            {/* Image Container with Overlay */}
-                            <div className="relative h-48 overflow-hidden">
-                                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors duration-300 z-10"></div>
-                                <img 
-                                    src={project.image} 
-                                    alt={project.title} 
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                                />
-                            </div>
+    {
+      title: "Women's Clothing E-commerce",
+      description:
+        "A responsive e-commerce web application designed for a women's clothing brand with product browsing, category filtering, and a smooth shopping cart experience.",
+      features: [
+        "Dynamic product listing & filters",
+        "Shopping cart functionality",
+        "Mobile-first responsive design",
+        "Reusable component-based architecture"
+      ],
+      tech: ["React", "JavaScript", "API", "Tailwind", "MERN"],
+      image:
+        "https://img.freepik.com/free-vector/fashion-sale-landing-page-template_23-2148582384.jpg?semt=ais_hybrid&w=740&q=80",
+      links: {
+        demo: "https://project01-smoky.vercel.app/",
+        code: "#"
+      }
+    }
+  ];
 
-                            {/* Content */}
-                            <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                                    {project.title}
-                                </h3>
-                                <p className="text-slate-400 text-sm mb-4 line-clamp-3 flex-grow">
-                                    {project.description}
-                                </p>
+  return (
+    <section id="projects" className="relative min-h-screen bg-slate-950 py-24 px-4">
 
-                                {/* Tech Stack */}
-                                <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.tech.map((tech, i) => (
-                                        <span key={i} className="px-2 py-1 text-xs font-medium text-slate-300 bg-slate-800/80 rounded-md border border-slate-700">
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
+      {/* Background glow */}
+      <div className="absolute top-40 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-40 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl -z-10"></div>
 
-                                {/* Action Buttons */}
-                                <div className="flex items-center justify-between pt-4 border-t border-slate-800">
-                                    <div className="flex gap-4">
-                                        <a href={project.links.code} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 text-sm">
-                                            <Github size={18} />
-                                            <span>Code</span>
-                                        </a>
-                                        <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-1 text-sm">
-                                            <ExternalLink size={18} />
-                                            <span>Live Demo</span>
-                                        </a>
-                                    </div>
-                                    <ArrowRight size={18} className="text-slate-600 group-hover:text-blue-400 group-hover:translate-x-1 transition-all" />
-                                </div>
-                            </div>
+      <div className="container mx-auto max-w-7xl">
 
-                            {/* Hover Gradient Line at Bottom */}
-                            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                        </div>
-                    ))}
+        {/* Header */}
+        <div className="flex flex-col items-center text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-blue-400 text-sm">
+            <Folder size={14} />
+            Portfolio
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Featured
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+              {" "}Projects
+            </span>
+          </h2>
+
+          <p className="text-slate-400 max-w-2xl">
+            A selection of projects showcasing full-stack development,
+            responsive design, and modern UI/UX practices.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition duration-300 hover:-translate-y-2 flex flex-col"
+            >
+
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-4">
+
+                  <a
+                    href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm flex items-center gap-1"
+                  >
+                    <ExternalLink size={16} />
+                    Demo
+                  </a>
+
+                  <a
+                    href={project.links.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-white text-black rounded-lg text-sm flex items-center gap-1"
+                  >
+                    <Github size={16} />
+                    Code
+                  </a>
+
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-grow">
+
+                <div className="text-xs text-green-400 bg-green-500/10 px-2 py-1 rounded-md w-fit mb-2">
+                  Featured Project
                 </div>
 
-                {/* View More Button */}
-                <div className="mt-16 text-center">
-                    <a href="https://github.com/sachinmarmat" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-xl border border-slate-800 hover:bg-slate-800 hover:border-slate-700 transition-all group">
-                        <span>View Full Project Archive</span>
-                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400">
+                  {project.title}
+                </h3>
+
+                <p className="text-slate-400 text-sm mb-3">
+                  {project.description}
+                </p>
+
+                {/* Features */}
+                <ul className="text-xs text-slate-500 mb-4 space-y-1">
+                  {project.features.map((feature, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="text-blue-400">•</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Tech */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 text-xs font-semibold text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Bottom */}
+                <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-800">
+
+                  <div className="flex gap-4 text-sm">
+
+                    <a
+                      href={project.links.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-slate-400 hover:text-white"
+                    >
+                      <Github size={16} />
+                      Code
                     </a>
+
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-slate-400 hover:text-blue-400"
+                    >
+                      <ExternalLink size={16} />
+                      Live
+                    </a>
+
+                  </div>
+
+                  <ArrowRight
+                    size={18}
+                    className="text-slate-600 group-hover:text-blue-400 group-hover:translate-x-1 transition"
+                  />
+
                 </div>
+
+              </div>
 
             </div>
-        </section>
-    );
+          ))}
+
+        </div>
+
+        {/* View more */}
+        <div className="mt-16 text-center">
+          <a
+            href="https://github.com/sachinmarmat"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-xl border border-slate-800 hover:bg-slate-800 transition"
+          >
+            View Full Project Archive
+            <ArrowRight size={16} />
+          </a>
+        </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default Projects;
