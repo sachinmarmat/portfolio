@@ -89,7 +89,7 @@ const Profile = () => {
 
         {/* --- FULL SCREEN MOBILE MENU OVERLAY --- */}
         <div
-          className={`md:hidden fixed inset-0 w-screen h-full bg-[#020617]/95 backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] z-40 flex flex-col justify-center
+          className={`md:hidden fixed inset-0 w-screen h-155 bg-[#020617]/95 backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] z-40 flex flex-col justify-center
   ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full pointer-events-none'}`}
         >
 
